@@ -15,4 +15,17 @@ def triangle():
         Para las entradas "1", "2" y "5", la salida esperada es:
         Los lados no forman un triangulo valido
     """
-    pass
+    l1= float(input())
+    l2 = float(input())
+    l3 = float(input())
+    lmax = max(l1, l2, l3)
+    compare = l1 + l2 + l3 - lmax
+
+    case_a = compare > lmax
+
+    if case_a:
+        print("Los lados forman un triangulo valido")
+    else:
+        print("Los lados no forman un triangulo valido")
+
+#triangle()

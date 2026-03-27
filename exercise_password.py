@@ -23,4 +23,20 @@ def password():
         Contraseña muy corta
         Debe contener un numero
     """
-    pass
+    my_password = input()
+    longitud = len(my_password)
+    num_check = '1' in my_password or '2' in my_password or '3' in my_password or '4' in my_password or '5' in my_password or '6' in my_password or '7' in my_password or '8' in my_password or '9' in my_password or '0' in my_password
+    invalid = False
+
+    if longitud < 8:
+        print("Contraseña muy corta")
+        invalid = True
+    if not num_check:
+        print("Debe contener un numero")
+        invalid = True
+    if not invalid:
+        print("Contraseña valida")
+
+
+
+
